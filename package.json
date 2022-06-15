@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.vue .",
+    "lint:quiet": "eslint --quiet --ignore-path .gitignore --ext .js,.ts,.vue .",
+    "lint:fix": "eslint --fix --quiet --ignore-path .gitignore --ext .js,.ts,.vue ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-stage"
+    }
+  },
+  "lint-stage": {
+    "*.{js,ts,vue}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "bracketSameLine": true,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
+    "nuxt": "3.0.0-rc.4",
+    "nuxt-windicss": "^2.4.2",
+    "prettier": "^2.7.0",
+    "typescript": "^4.7.3"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:nuxt/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "no-var": "error",
+    "no-useless-catch": 1,
+    "no-trailing-spaces": "error",
+    "unicorn/no-for-loop": "error",
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "max-classes-per-file": ["error", 2]
+  },
+  "ignorePatterns": ["*.md"],
+  "overrides": [
+    {
+      "files": ["layouts/**/*.{js,ts,vue}"],
+      "rules": {
+        "vue/multi-word-component-names": "off"
+      }
+    }
+  ]
+}
