@@ -11,10 +11,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-stage"
+      "pre-commit": "lint-staged"
     }
   },
-  "lint-stage": {
+  "lint-staged": {
     "*.{js,ts,vue}": [
       "prettier --write"
     ]
