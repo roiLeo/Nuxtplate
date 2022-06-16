@@ -15,8 +15,7 @@ This is the Nuxtjs boilerplate. It contains the following conventions/features:
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn i
+yarn
 ```
 
 ## Development Server
