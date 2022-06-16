@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-black text-white">
+	<div class="bg-black text-white p-8">
 		<nav
 			class="
 				flex
@@ -7,7 +7,6 @@
 				justify-between
 				relative
 				mx-auto
-				p-8
 				max-w-5xl
 				w-full
 			">
