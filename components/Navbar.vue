@@ -11,7 +11,7 @@
 				w-full
 			">
 			<h1 class="dark:text-green-500">Hello Nuxt!</h1>
-      <ColorModeButton class="hover:text-gray-400" />
+			<ColorModeButton class="hover:text-gray-400" />
 		</nav>
 	</div>
 </template>

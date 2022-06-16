@@ -1,19 +1,3 @@
-<script setup>
-defineProps({
-  size: {
-    type: String,
-    default: 'w-8 h-8'
-  },
-  spacing: {
-    type: String,
-    default: 'p-0'
-  }
-})
-
-const colorMode = useColorMode()
-const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light'))
-</script>
-
 <template>
   <button aria-label="Color Mode" class="inline-block" @click="onClick">
     <ColorScheme placeholder="...">
@@ -34,7 +18,22 @@ const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'da
         <path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-
     </ColorScheme>
   </button>
 </template>
+
+<script setup>
+defineProps({
+  size: {
+    type: String,
+    default: 'w-8 h-8'
+  },
+  spacing: {
+    type: String,
+    default: 'p-0'
+  }
+})
+
+const colorMode = useColorMode()
+const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light'))
+</script>
