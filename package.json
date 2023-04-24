@@ -33,7 +33,7 @@
     "lint-staged": "^13.2.1",
     "nuxt": "^3.3.3",
     "nuxt-windicss": "^2.6.1",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "typescript": "^5.0.4"
   }
 }
