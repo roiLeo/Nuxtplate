@@ -30,7 +30,7 @@
     "eslint": "^8.46.0",
     "eslint-plugin-vue": "^9.16.1",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
+    "lint-staged": "^14.0.0",
     "nuxt": "^3.3.3",
     "nuxt-windicss": "^2.6.1",
     "prettier": "^3.0.0",
