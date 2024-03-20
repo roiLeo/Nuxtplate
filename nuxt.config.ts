@@ -1,3 +1,8 @@
 export default defineNuxtConfig({
-  modules: ['nuxt-windicss'],
+  modules: ['@nuxtjs/i18n', '@nuxt/ui'],
+  ui: { global: true },
+  colorMode: {
+    preference: 'dark',
+    classSuffix: '',
+  },
 })
