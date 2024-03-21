@@ -34,8 +34,8 @@
 
 <script lang="ts" setup>
 defineProps({
-  link: { type: String },
-  label: { type: String },
-  subtitle: { type: String },
+  link: { type: String, default: '' },
+  label: { type: String, default: '' },
+  subtitle: { type: String, default: '' },
 })
 </script>
