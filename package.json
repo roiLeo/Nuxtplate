@@ -19,11 +19,6 @@
       "prettier --write"
     ]
   },
-  "prettier": {
-    "semi": false,
-    "bracketSameLine": true,
-    "singleQuote": true
-  },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.4",
     "@nuxt/eslint-config": "^0.2.0",

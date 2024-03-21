@@ -3,27 +3,27 @@ export default defineAppConfig({
     primary: 'indigo',
     gray: 'neutral',
     icons: {
-      dynamic: true,
+      dynamic: true
     },
     button: {
       default: {
-        size: 'lg',
-      },
+        size: 'lg'
+      }
     },
     select: {
       default: {
-        size: 'lg',
-      },
+        size: 'lg'
+      }
     },
     input: {
       default: {
-        size: 'lg',
-      },
+        size: 'lg'
+      }
     },
     textarea: {
       default: {
-        size: 'lg',
-      },
-    },
-  },
+        size: 'lg'
+      }
+    }
+  }
 })

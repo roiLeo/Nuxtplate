@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex min-h-screen flex-col">
     <DefaultNavbar />
 
     <UContainer class="w-full">
@@ -13,7 +13,7 @@
 <script setup lang="ts">
 useHead({
   bodyAttrs: {
-    class: 'bg-white dark:bg-gray-900',
-  },
+    class: 'bg-white dark:bg-gray-900'
+  }
 })
 </script>

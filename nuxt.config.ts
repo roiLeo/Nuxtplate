@@ -3,6 +3,6 @@ export default defineNuxtConfig({
   ui: { global: true },
   colorMode: {
     preference: 'dark',
-    classSuffix: '',
-  },
+    classSuffix: ''
+  }
 })

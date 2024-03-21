@@ -6,17 +6,14 @@
       :ui="{
         color: {
           white: {
-            solid:
-              'ring-0 bg-gray-100 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800',
-            ghost: 'hover:bg-gray-50 dark:hover:bg-gray-800/50',
-          },
-        },
+            solid: 'ring-0 bg-gray-100 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800',
+            ghost: 'hover:bg-gray-50 dark:hover:bg-gray-800/50'
+          }
+        }
       }"
       :variant="color.value === selected.value ? 'solid' : 'ghost'"
       @click.stop.prevent="$emit('select')">
-      <span
-        class="inline-block w-3 h-3 rounded-full"
-        :style="{ backgroundColor: color.hex }" />
+      <span class="inline-block h-3 w-3 rounded-full" :style="{ backgroundColor: color.hex }" />
     </UButton>
   </UTooltip>
 </template>
