@@ -4,3 +4,23 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    groups:
+      nuxt:
+        patterns:
+          - "@nuxt/*"
+          - "nuxt-*"
+          - "nuxt"
+      vue:
+        patterns:
+          - "@vue/*"
+          - "vue-*"
+          - "vue"
+      lint:
+        patterns:
+          - "@typescript-eslint/*"
+          - "eslint-*"
+          - "eslint"
+          - "husky"
+          - "lint-staged"
+          - "prettier-*"
+          - "prettier"
