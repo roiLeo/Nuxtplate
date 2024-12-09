@@ -34,6 +34,6 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.19.2",
-    "@nuxtjs/i18n": "^9.1.0"
+    "@nuxtjs/i18n": "^9.1.1"
   }
 }
