@@ -1,21 +1,21 @@
 <template>
   <UPopover mode="hover">
     <template #default="{ open }">
-      <UButton color="gray" variant="ghost" square :class="[open && 'bg-gray-50 dark:bg-gray-800']" aria-label="Color picker">
+      <UButton color="neutral" variant="ghost" square :class="[open && 'bg-neutral-50 dark:bg-neutral-800']" aria-label="Color picker">
         <UIcon name="i-heroicons-swatch-20-solid" class="text-primary-500 dark:text-primary-400 h-5 w-5" />
       </UButton>
     </template>
 
-    <template #panel>
-      <div class="p-2">
+    <template #content>
+      <div class="p-4">
         <div class="grid grid-cols-5 gap-px">
-          <ColorPickerPill v-for="color in primaryColors" :key="color.value" :color="color" :selected="primary!" @select="primary = color" />
+          <!-- <ColorPickerPill v-for="color in primaryColors" :key="color.value" :color="color" :selected="primary!" @select="primary = color" /> -->
         </div>
 
-        <hr class="my-2 border-gray-200 dark:border-gray-800" />
+        <hr class="my-2 border-neutral-200 dark:border-neutral-800" />
 
         <div class="grid grid-cols-5 gap-px">
-          <ColorPickerPill v-for="color in grayColors" :key="color.value" :color="color" :selected="gray!" @select="gray = color" />
+          <!-- <ColorPickerPill v-for="color in neutralColors" :key="color.value" :color="color" :selected="neutral!" @select="neutral = color" /> -->
         </div>
       </div>
     </template>
@@ -23,41 +23,44 @@
 </template>
 
 <script setup lang="ts">
-import colors from '#tailwind-config/theme/colors'
+// import colors from '#tailwind-config/theme/colors'
 
 const appConfig = useAppConfig()
 const colorMode = useColorMode()
 
-const primaryColors = computed(() =>
-  appConfig.ui.colors
-    .filter((color) => color !== 'primary')
-    .map((color) => ({
-      value: color,
-      text: color,
-      hex: colors[color][colorMode.value === 'dark' ? 400 : 500]
-    }))
-)
-const grayColors = computed(() =>
-  ['slate', 'cool', 'zinc', 'neutral', 'stone'].map((color) => ({
-    value: color,
-    text: color,
-    hex: colors[color][colorMode.value === 'dark' ? 400 : 500]
-  }))
-)
+const colors = ['red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose']
+const neutrals = ['slate', 'gray', 'zinc', 'neutral', 'stone']
 
-const primary = computed({
-  get: () => primaryColors.value.find((option) => option.value === appConfig.ui.primary),
-  set: (option) => {
-    appConfig.ui.primary = option!.value
-    window.localStorage.setItem('nuxt-ui-primary', appConfig.ui.primary)
-  }
-})
+// const primaryColors = computed(() =>
+//   appConfig.ui.colors
+//     .filter((color) => color !== 'primary')
+//     .map((color) => ({
+//       value: color,
+//       text: color,
+//       hex: colors[color][colorMode.value === 'dark' ? 400 : 500]
+//     }))
+// )
+// const neutralColors = computed(() =>
+//   neutrals.map((color) => ({
+//     value: color,
+//     text: color,
+//     hex: colors[color][colorMode.value === 'dark' ? 400 : 500]
+//   }))
+// )
 
-const gray = computed({
-  get: () => grayColors.value.find((option) => option.value === appConfig.ui.gray),
-  set: (option) => {
-    appConfig.ui.gray = option!.value
-    window.localStorage.setItem('nuxt-ui-gray', appConfig.ui.gray)
-  }
-})
+// const primary = computed({
+//   get: () => primaryColors.value.find((option) => option.value === appConfig.ui.primary),
+//   set: (option) => {
+//     appConfig.ui.primary = option!.value
+//     window.localStorage.setItem('nuxt-ui-primary', appConfig.ui.primary)
+//   }
+// })
+
+// const neutral = computed({
+//   get: () => neutralColors.value.find((option) => option.value === appConfig.ui.neutral),
+//   set: (option) => {
+//     appConfig.ui.neutral = option!.value
+//     window.localStorage.setItem('nuxt-ui-neutral', appConfig.ui.neutral)
+//   }
+// })
 </script>
