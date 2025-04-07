@@ -3,7 +3,7 @@
     <UContainer class="flex h-14 items-center justify-between">
       <NuxtLink to="/">Starter Nuxt</NuxtLink>
       <div class="flex gap-1.5">
-        <ColorPicker />
+        <ThemePicker />
         <ColorModeButton />
       </div>
     </UContainer>
