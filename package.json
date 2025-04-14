@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@nuxt/ui": "^3.0.2",
-    "@nuxtjs/i18n": "^9.5.2",
+    "@nuxtjs/i18n": "^9.5.3",
     "nuxt": "^3.16.2"
   },
   "packageManager": "pnpm@9.15.7"
