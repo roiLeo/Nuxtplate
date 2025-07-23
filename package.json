@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "2.6.2",
-    "@nuxt/eslint-config": "^1.5.2",
+    "@nuxt/eslint-config": "^1.7.0",
     "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.5.1",
@@ -34,7 +34,7 @@
   "dependencies": {
     "@nuxt/ui": "^3.2.0",
     "@nuxtjs/i18n": "^10.0.1",
-    "nuxt": "^3.17.6"
+    "nuxt": "^4.0.1"
   },
   "packageManager": "pnpm@9.15.7"
 }
