@@ -1,6 +1,4 @@
 export default defineNuxtConfig({
-  future: { compatibilityVersion: 4 },
-
   app: {
     head: {
       title: 'Next',
