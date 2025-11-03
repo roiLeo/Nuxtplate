@@ -1,5 +1,14 @@
 {
   "private": true,
+  "name": "nuxtplate",
+  "description": "A Nuxt starter template with TypeScript, ESLint, Prettier, Husky, lint-staged, Nuxt UI, and i18n configured and ready to use.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roiLeo/Nuxtplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roiLeo/Nuxtplate/issues"
+  },
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
