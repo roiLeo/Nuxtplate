@@ -1,5 +1,14 @@
 {
   "private": true,
+  "name": "nuxtplate",
+  "description": "A Nuxt starter template with TypeScript, ESLint, Prettier, Husky, lint-staged, Nuxt UI, and i18n configured and ready to use.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roiLeo/Nuxtplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roiLeo/Nuxtplate/issues"
+  },
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
@@ -20,9 +29,9 @@
     ]
   },
   "devDependencies": {
-    "@nuxt/devtools": "3.0.0",
+    "@nuxt/devtools": "3.0.1",
     "@nuxt/eslint-config": "^1.10.0",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "husky": "^9.1.7",
@@ -33,7 +42,7 @@
   },
   "dependencies": {
     "@nuxt/ui": "4.1.0",
-    "@nuxtjs/i18n": "^10.1.2",
+    "@nuxtjs/i18n": "^10.2.0",
     "nuxt": "^4.2.0"
   },
   "packageManager": "pnpm@9.15.7"
