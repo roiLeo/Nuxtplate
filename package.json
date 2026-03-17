@@ -43,7 +43,7 @@
   "dependencies": {
     "@nuxt/ui": "4.5.1",
     "@nuxtjs/i18n": "^10.2.3",
-    "nuxt": "^4.3.1"
+    "nuxt": "^4.4.2"
   },
   "packageManager": "pnpm@9.15.7"
 }
