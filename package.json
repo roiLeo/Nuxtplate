@@ -31,13 +31,13 @@
   "devDependencies": {
     "@nuxt/devtools": "3.2.4",
     "@nuxt/eslint-config": "^1.15.2",
-    "eslint": "^10.2.1",
+    "eslint": "^10.3.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "husky": "^9.1.7",
-    "lint-staged": "^16.4.0",
+    "lint-staged": "^17.0.4",
     "prettier": "^3.8.3",
-    "prettier-plugin-tailwindcss": "^0.7.2",
+    "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
