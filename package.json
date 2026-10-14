@@ -41,9 +41,9 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "@nuxt/ui": "4.11.2",
+    "@nuxt/ui": "4.11.3",
     "@nuxtjs/i18n": "^10.6.0",
-    "nuxt": "^4.5.2"
+    "nuxt": "^4.6.1"
   },
   "packageManager": "pnpm@9.15.7"
 }
